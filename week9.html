@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Use this section for your webpage metadata - more detail https://www.w3schools.com/html/html_head.asp -->
+
+	<title>IL & Lab works - Week9</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!--  <link rel="stylesheet" href="filepath/filename.css"> -->
+	<!--  When you have a stylesheet you can uncomment the link element above and edit the href to suit your file system and 		point to your CSS sheet -->
+
+<link rel="stylesheet" href="csstemplate1.css">
+
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</head>
+
+<body>
+
+	<!-- begin the main section of the page-->
+	<div class="Mbody" id="Week9_IL_LW">
+		<h1>Week 9: Accessibility in Multimedia</h1>
+		
+		<section id="IL-week9">
+		<h2>A. Independent Learning</h2>
+		<h3>Evaluating accessible design</h3>
+		<h4>Task 1 & 2:</h4>
+		
+		<p><b>The used webpage: https://www.sleepdiplomat.com/speaker</b></p>
+		<dd><p><a href="https://www.sleepdiplomat.com/speaker">Explore the website!</a></p></dd>
+		
+		<p><b>A. Analysis by WAVE:</b></p>
+		<center>
+		<img src="images/IMG18w9-WAVE.png" alt="IL-week9_task_WAVE" height="500">
+	    </center>
+		</section>
+		
+		<p><b>B. Analysis by WebAim:</b></p>
+		<div class="clearfix">
+			<div class="img-container">
+			<img src="images/IMG19w9-WebAim1a.png" alt="IL-week9_task_Webaim1a" style="width:100%">
+			</div>
+			<div class="img-container">
+			<img src="images/IMG20w9-WebAim1b.png" alt="IL-week9_task_Webaim1b" style="width:100%">
+			</div>
+			<div class="img-container">
+			<img src="images/IMG21w9-WebAim2.png" alt="IL-week9_task_Webaim2" style="width:100%">
+			</div>
+		</div>
+		
+		
+		<p><b>C. Analysis by Readability Test Tool:</b></p>
+		<center>
+		<img src="images/IMG22w9-Readibilitytesttool.png" alt="IL-week9_task_Readabilitytesttool" height="300">
+	    </center>
+		
+		
+		<p>These accessibility tools are undoubtedly useful and highlight the issues around the aspect of making websites accessible to everyone. 
+		I was surprised about the used webpage and how many red flags it got on WAVE for contrast errors; at first glance, it looked nicely designed
+		to create a simple, smooth, elegant, and calming atmosphere for the viewer. However, after visualising the issues, I started to examine the 
+		webpage from another perspective. Indeed, it has very low contrast considering the backgrounds and presented text elements that could be
+		hard to interpret visually. The contrast issues were highlighted further when I used WebAim, although the bottom third of the background 
+		passed the test providing a nice contrast for the foreground but also made it complicated to read the text. (background fixed picture). 
+		Also, I could not figure out the colour codes from the code so as an alternative solution I used GIMP’s colour picker tool after taking
+		a screenshot from the webpage. It provided me with the HTML notation.  Link (orange) and text (grey) colours have a nice saturation contrast
+		however, the link colour does not correspond well to the background colour (white - foreground). This webpage could be problematic to
+		interpret for individuals with visual disability. </p>
+		<p>WAVE also highlighted missing alternative text for images which I could not figure out as there are only YouTube videos imbedded on 
+		this page and I could not find the icons for it either.</p>
+		<p>The result of the readability test is appropriate considering the content of the webpage. (from teenage years onward).</p>
+		<p>As for my portfolio, I am aiming for good contrast and readability. I also came up with the idea of changing the style for day and 
+		night users. (Week 6). Alternative text for images is also important to provide usable information for audio narration. Every image in 
+		the portfolio has alternative text however I am planning to give them more descriptive text for the final website.  Also, I will focus 
+		on providing subtitles and captions for the video elements.</p>
+		
+		
+		
+		</section>
+	     
+		</section>
+		
+		<section id="LW-week9">
+		<h2>B. Lab works</h2>
+		<h3>Accessibility</h3>
+		
+		<p><b>Full Script:</b></p>
+		
+		<dd><p>(Crickets chirping) 
+			<br>(Owl hooting) 
+			<br>(A car passing by) 
+			<br>(Relaxing music playing)<br><br>
+
+			The night has come, and the moon shines brightly. This is the time when people are supposed to all be settled already in their beds and have
+			 drifted off to “dreamland”. Only the nocturnal animals are wide awake, owls, foxes and crickets awake, but this is their time of the day.<br> 
+			<br>Although she is not an owl, a fox, or a cricket Lucy is wide awake in her bed, unable to sleep. She is changing channel after channel
+			 on the TV with tired eyes and mind. “This isn’t going to help; I should try something else to relax.” she thinks.<br> 
+			<br>She puts her headphones on.<br> 
+			<br>She yawns tiredly. The music takes her mind off of her troubles, and she is finally able to relax. She feels her mind drifting 
+			further and further away…<br> 
+			<br>She arrives in “dreamland” and is having a beautiful dream… 
+</p></dd>
+		
+
+		<br><p><b>Video with subtitle:</b></p>
+		
+		<center>
+		<video id="VD07w8-driftingoff-med" height="400" controls>
+		<source src="VD07w8-driftingoff-med.mp4" type="video/mp4">
+		<track src="subtitle_cc.vtt" kind="captions" srclang="en" label="English" default>
+		
+		</video>
+		</center>
+		
+
+			<p>
+			It does not want to work! I tried to solve it, but it is time to put it on hold until next semester.
+			When I did not add the default attribute for the track line, the button appeared, and when I clicked on it, nothing happened, and it disappeared. (W3school presented the code that way, so I tried it.)
+			When I used the provided code, nothing happened.
+			Everything was in the same folder, I looked for mistakes in the code (nothing). I saved the vtt file with the correct extension for All files....
+			I checked different websites for other codes to solve the issue, but all presented the same thing we used.
+			I will upload two screenshots to prove I was working on it, but I can not find the issue. I was following the instructions provided by the websites.
+			</p>		
+		
+		
+		<center>
+		<img src="images/IMG23w9-vtt_script.png" alt="IL-week9_vtt_file" width = '800'>
+	    </center>
+		
+		<center>
+		<img src="images/IMG24w9-captions-buttonappeared.png" alt="IL-week9_cc_button" width = '800'>
+	    </center>
+		
+		
+
+			<p>
+			As for accessibility, I was thinking about an obvious one. People use different kinds of devices to browse the Internet. 
+			The different sizes of screens could alter the website’s interface; therefore, it needs to be responsive. It enhances the user experience 
+			on every device.
+			<br>Considering my proposed website, I will use video elements, so subtitles and captions will be integrated. This option can be enhanced 
+			further by adding subtitles in different languages. This way, the website could widen the range of the target audience.
+			<br>For images, alternative text will be added in a descriptive way to aid audio narration. Further, the colours on the website will 
+			be carefully considered to provide appropriate contrast.
+			</p>
+		
+	
+		</section>
+	
+			
+		
+	</div>
+	<!-- end the main section of the homepage -->
+	<hr>	
+	<!-- begin navigation menu -->
+	<footer>
+	<div class="Index" id="menu">
+		<a href="index.html">Homepage</a>
+	</div>
+	</footer>
+	<!-- end navigation menu -->
+
+</body>
+</html>
